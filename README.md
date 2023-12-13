@@ -1,4 +1,11 @@
-# TMUX Config
+# Terminal Config
+
+## Oh My ZSH
+I use oh my zsh for highlighting with a theme. 
+
+Under the .zshrc file insert: ZSH_THEME="eastwood"
+
+## TMUX
 Currently my tmux config consists of just the mouse on setting to easily switch between panes.
 This can be done via the TMUX commands: `CTRL + B` `:` then enter `set -g mouse on`
 
