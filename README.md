@@ -15,3 +15,10 @@ Or change the `mouse` value in the .tmux.conf in your home dir
 
 Selecting text to copy and paste can be done with the `fn`/`option` key on mac or shift on linux.
 To stop the selection from  highlighting another pane use the toggle option zoom: `CTRL + B` `z`. Use the same combination to toggle back once done.
+
+To default start tmux added the following to my .zprofile:
+```
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+```
